@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><title>Edge cases</title></head>
+<body>
+<form action="/search?lang=en" method="get">
+  <input name="q">
+  <button type="submit">Search</button>
+</form>
+<FORM ACTION="/upper" METHOD="post">
+  <input name="email">
+  <button type="submit">Join</button>
+</FORM>
+<form action="/quick" />
+<style>
+/* A form written in a style block is not a form: */
+.fake { content: "<form>"; }
+</style>
+</body>
+</html>

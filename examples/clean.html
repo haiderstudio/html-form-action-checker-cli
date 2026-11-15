@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head><title>Home</title></head>
+<body>
+<form action="/search" method="get">
+  <input name="q">
+  <button type="submit">Search</button>
+</form>
+<form action="https://example.com/signup" method="post">
+  <input name="email">
+  <button type="submit">Sign up</button>
+</form>
+<!-- A form in a comment is not a form:
+<form method="post"><input name="x"></form>
+-->
+<script>
+// A form written in a script string is not a form either:
+var markup = '<form method="post">';
+</script>
+</body>
+</html>
